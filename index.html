@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>LaterLink</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                 <div id="need_link"></div>
+
+            </div>
+        </div>
+    </div>
+
+   
+
+
+</body>
+
+<script>
+    //https://docs.google.com/forms/d/e/1FAIpQLSd7Z5EW71uG1GZOfdBww4E1x_R_Mk4NeXdQy68gXPIp4K84Ww/viewform?usp=pp_url&entry.1295727719=link&entry.53845759=notes&entry.177103681=keywords
+    //1) viewform -> formResponse
+    //2) append: &submit=Submit
+    const form_link = localStorage.getItem("form_link");
+
+    if (form_link == null)
+    {
+        $("#need_link").html(`
+                                Paste link to your Google form here
+                                <br/>
+                                <input type="text" class="form-control" id="google_link_input" value='https://docs.google.com/forms/d/e/1FAIpQLSd7Z5EW71uG1GZOfdBww4E1x_R_Mk4NeXdQy68gXPIp4K84Ww/viewform?usp=pp_url&entry.1295727719=link&entry.53845759=notes&entry.177103681=keywords'>
+                                <br/>
+                                <button class="btn btn-sm btn-success" onClick="save_form_link()">Save</button>
+                            `);
+
+    }
+    else
+    {
+        $("#need_link").html(`
+                                Link:
+                                <br/>
+                                <input type="text" class="form-control" id="web_link">
+                                <br/>
+                                <input type="checkbox" class="form-check-input" id="link_junk"> Remove junk from link
+                                <br/>
+                                <br/>
+
+                                Notes:
+                                <br/>
+                                <input type="text" class="form-control" id="notes">
+                                <br/>
+
+
+                                Keywords:
+                                <br/>
+                                <input type="text" class="form-control" id="keywords">
+                                <br/>
+
+                                <button class="btn btn-sm btn-success" onClick="save_link()">Save</button>
+                                <button class="btn btn-sm btn-secondary" onClick="clear_form()">Clear</button>
+                            `);
+
+    }
+
+    function save_form_link()
+    {
+        var link = $('#google_link_input').val();
+        link = link.replace("viewform","formResponse") + "&submit=Submit";
+        localStorage.setItem("form_link",link);
+    }
+
+    function save_link()
+    {
+        var web_link = $("#web_link").val();
+        var notes = $("#notes").val();
+        var keywords = $("#keywords").val();
+
+        if ($('#link_junk').is(':checked'))
+        {
+            web_link = web_link.split('#')[0];
+            web_link = web_link.split('?')[0];
+        }
+
+        link = form_link.replace("link",web_link);
+        link = link.replace("notes",encodeURIComponent(notes));
+        link = link.replace("keywords",encodeURIComponent(keywords));
+        console.log(link);
+
+        
+
+        //window.open(link, '_blank', 'location=yes,height=320,width=520,scrollbars=yes,status=yes');
+        window.open(link, '_blank', 'popup=yes,location=yes,height=320,width=520,scrollbars=yes,status=yes');
+
+
+        /*
+        $.ajax({
+            url: link,
+            dataType: 'jsonp',
+            crossDomain: true,
+            type: "GET",
+            dataType: "html"
+            });
+        */
+    }
+
+    function clear_form()
+    {
+        $("#web_link").val("");
+        $("#notes").val("");
+        $("#keywords").val("");
+
+    }
+</script>
+</html>
