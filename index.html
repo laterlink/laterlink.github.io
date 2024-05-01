@@ -56,7 +56,7 @@
             <div class="modal-body">
               <p>Paste share link to Google Sheet (containing your links)</p>
               <br/>
-              <input type="text" id="sheet_link_text" class="form-control" placeholder="Paste share link here" />
+              <input onclick="this.select()" type="text" id="sheet_link_text" class="form-control" placeholder="Paste share link here" />
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -93,7 +93,7 @@
         $("#need_link").html(`
                                 Link to save for later:
                                 <br/>
-                                <input type="text" class="form-control" id="web_link">
+                                <input type="text" class="form-control" id="web_link" onclick="this.select()">
                                 <br/>
                                 <input type="checkbox" class="form-check-input" id="link_junk"> Remove junk from link
                                 <br/>
@@ -101,13 +101,13 @@
 
                                 Notes:
                                 <br/>
-                                <input type="text" class="form-control" id="notes">
+                                <input type="text" class="form-control" id="notes" onclick="this.select()">
                                 <br/>
 
 
                                 Keywords:
                                 <br/>
-                                <input type="text" class="form-control" id="keywords">
+                                <input type="text" class="form-control" id="keywords" onclick="this.select()">
                                 <br/>
 
                                 <button class="btn btn-sm btn-success" onClick="save_link()">Save</button>
@@ -119,7 +119,6 @@
             $("#sheet_share_link").html(`
                                             <a href="${z}" target="_blank">See your links</a>
                                         `);
-
     }
 
     function save_form_link()
