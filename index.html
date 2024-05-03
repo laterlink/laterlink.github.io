@@ -30,7 +30,11 @@
                       <li><a class="dropdown-item" onclick="sheet_link_dialog('open')">Set link to sheet</a></li>
                     </ul>
                   </li>
+                   <li class="nav-item">
+                      <a id="your_links" class="nav-link" href="#">Your links</a>
+                  </li>
                 </ul>
+              
               </div>
             </div>
           </nav>
@@ -116,9 +120,16 @@
 
         z = localStorage.getItem("sheet_share_link");
         if (z != null)
-            $("#sheet_share_link").html(`
-                                            <a href="${z}" target="_blank">See your links</a>
-                                        `);
+        {
+            $("#your_links").prop("href",`${z}`);
+            $("#your_links").prop("target","_blank");
+            $("#your_links").attr("class","nav-link");
+        }
+        else
+        {
+            $("#your_links").attr("class","nav-link disabled");
+
+        }
     }
 
     function save_form_link()
@@ -149,17 +160,6 @@
 
         //window.open(link, '_blank', 'location=yes,height=320,width=520,scrollbars=yes,status=yes');
         window.open(link, '_blank', 'popup=yes,location=yes,height=320,width=520,scrollbars=yes,status=yes');
-
-
-        /*
-        $.ajax({
-            url: link,
-            dataType: 'jsonp',
-            crossDomain: true,
-            type: "GET",
-            dataType: "html"
-            });
-        */
     }
 
     function clear_form()
@@ -182,7 +182,18 @@
                         break;
             case 'save':
                         z =  $("#sheet_link_text").val();
-                        localStorage.setItem("sheet_share_link",z);
+                        if (!z)
+                        {
+                          localStorage.removeItem("sheet_share_link");
+                          $("#your_links").attr("class","nav-link disabled");
+                        }
+                        else 
+                        {
+                          localStorage.setItem("sheet_share_link",z);
+                          $("#your_links").attr("class","nav-link");
+                        }
+
+                        $("#your_links").prop("href",`${z}`);
                         alert("Link saved.");
                         $("#sheet_link_dialog").modal("hide");
                         break;
