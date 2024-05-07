@@ -7,7 +7,7 @@
 
 
 ### Step 1
-Start a new Google form and create 3 "short answer" questions. Call them "link," "keyword," and "notes" as shown here.
+Start a new Google form and create three "short answer" questions. You can call the questions whatever you want. We'll call them "link," "keyword," and "notes" as shown here.
 
 ![form configuration](https://github.com/laterlink/laterlink.github.io/blob/main/Images/form01.png)
 
@@ -47,6 +47,6 @@ Return to [https://laterlink.github.io](https://laterlink.github.io) anytime you
 
 ...nothing is stored on any server. Links are stored in your Google Sheet and the links you pasted above are only stored in the local storage associated with your browser.
 
-The whole thing is in the 1 html file called `index.html` in this repo. 
+The whole thing is in the one html file called `index.html` in this repo. 
 
 
