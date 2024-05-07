@@ -47,4 +47,6 @@ Return to [https://laterlink.github.io](https://laterlink.github.io) anytime you
 
 ...nothing is stored on any server. Links are stored in your Google Sheet and the links you pasted above are only stored in the local storage associated with your browser.
 
+The whole thing is in the 1 html file called `index.html` in this repo. 
+
 
