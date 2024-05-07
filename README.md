@@ -5,17 +5,20 @@
 
  ## Setup on the Google end
 
-1. Start a new Google form and create 3 "short answer" questions. Call them "link," "keyword," and "notes" as shown here.
+Start a new Google form and create 3 "short answer" questions. Call them "link," "keyword," and "notes" as shown here.
 
 ![form configuration](https://github.com/laterlink/laterlink.github.io/blob/main/Images/form01.png)
 
-1. Next pull down the 3 verical dots and select "Get pre-filled link." Fill in answers to your 3 questions with the words
-`link`, `keyword`, and `notes` as shown here. You must fill in the 3 answers with these words exactly.
+Next pull down the 3 verical dots and select "Get pre-filled link."
 
 ![prefilled](https://github.com/laterlink/laterlink.github.io/blob/main/Images/prefilled.png)
 
-1. Next, get the link by clicking the "Get link" button.
+Fill in answers to your 3 questions with the words
+`link`, `keyword`, and `notes` as shown here. You must fill in the 3 answers with these words exactly.
+
+Next, get the link by clicking the "Get link" button.
 
 ![prefill 3 answers](https://github.com/laterlink/laterlink.github.io/blob/main/Images/prefilled3.png)
 
-1. Go to (https://laterlink.github.io)[https://laterlink.github.io] and click the 'Config' dropdown in the menubar.  
+Go to (https://laterlink.github.io)[https://laterlink.github.io] and click the 'Config' dropdown in the menubar.   Select `Set link to Google form` and paste the "Get link" link into the window.  This link is stored only in the local storage associated with your web browser.
+
