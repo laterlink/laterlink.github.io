@@ -32,7 +32,7 @@ Go to [https://laterlink.github.io](https://laterlink.github.io) and click the '
 Find some cool link and copy it.  Go to [https://laterlink.github.io](https://laterlink.github.io) and paste it into the link box, and optionally add any notes and keywords
 
 ### Step 7
-Return to your Google form and click the `responses` tab, then click `Link to Sheets`
+Return to your Google form and click the `Responses` tab, then click `Link to Sheets`
 
 ![link to response sheet](https://github.com/laterlink/laterlink.github.io/blob/main/Images/linktosheet.png)
 
