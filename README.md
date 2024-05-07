@@ -26,10 +26,10 @@ Next, get the link by clicking the "Get link" button.
 ![prefill 3 answers](https://github.com/laterlink/laterlink.github.io/blob/main/Images/prefilled3.png)
 
 ### Step 5
-Go to (https://laterlink.github.io)[https://laterlink.github.io] and click the 'Config' dropdown in the menubar.   Select `Set link to Google form` and paste the "Get link" link into the window.  This link is stored only in the local storage associated with your web browser.
+Go to [https://laterlink.github.io](https://laterlink.github.io) and click the 'Config' dropdown in the menubar.   Select `Set link to Google form` and paste the "Get link" link into the window.  This link is stored only in the local storage associated with your web browser.
 
 ### Step 6
-Find some cool link and copy it.  Go to (https://laterlink.github.io)[https://laterlink.github.io] and paste it into the link box, and optionally add any notes and keywords
+Find some cool link and copy it.  Go to [https://laterlink.github.io](https://laterlink.github.io) and paste it into the link box, and optionally add any notes and keywords
 
 ### Step 7
 Return to your Google form and click the `responses` tab, then click `Link to Sheets`
@@ -37,14 +37,14 @@ Return to your Google form and click the `responses` tab, then click `Link to Sh
 ![link to response sheet](https://github.com/laterlink/laterlink.github.io/blob/main/Images/linktosheet.png)
 
 ### Step 8
-This will be the sheet where you can view your links.  Get a share link to this sheet and go back to  (https://laterlink.github.io)[https://laterlink.github.io].  Pull down the `Config` dropdown and paste this share link into the `Set link to sheet` option.
+This will be the sheet where you can view your links.  Get a share link to this sheet and go back to  [https://laterlink.github.io](https://laterlink.github.io).  Pull down the `Config` dropdown and paste this share link into the `Set link to sheet` option.
 
 ### You're all set!
 
-Return to (https://laterlink.github.io)[https://laterlink.github.io] anytime you want to save a cool link for later, or to click the `Your links` link to see your links.
+Return to [https://laterlink.github.io](https://laterlink.github.io) anytime you want to save a cool link for later, or to click the `Your links` link to see your links.
 
 ## And remember...
 
-...nothing is stored on any server. The links you pasted are only stored in the local storage associated with your browser.
+...nothing is stored on any server. Links are stored in your Google Sheet and the links you pasted above are only stored in the local storage associated with your browser.
 
 
