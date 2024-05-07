@@ -16,6 +16,6 @@
 
 1. Next, get the link by clicking the "Get link" button.
 
-https://github.com/laterlink/laterlink.github.io/blob/main/Images/prefilled.png)
+![prefill 3 answers]https://github.com/laterlink/laterlink.github.io/blob/main/Images/prefilled.png)
 
 1. Go to (https://laterlink.github.io)[https://laterlink.github.io] and click the 'Config' dropdown in the menubar.  
