@@ -1,9 +1,9 @@
 # LaterLink
- See a cool link but don't have time to read it now?  
+ See a cool link out there on the web but don't have time to read it right now?  
  
  LaterLink is a single-page, local-only storage service that bounces web-links you'd like to save into your own Google Sheet as the back-end.  Save interesting weblinks for later and effortlessly browse them from your very own Google Sheet.  Here's how it works.
 
- ## Setup on the Google end
+ ## Setup
 
 
 ### Step 1
