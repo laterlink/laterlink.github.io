@@ -163,15 +163,18 @@
 
         
 
-        window.open(link, '_blank', 'popup=yes,location=yes,height=320,width=520,scrollbars=yes,status=yes');
+        //window.open(link, '_blank', 'popup=yes,location=yes,height=320,width=520,scrollbars=yes,status=yes');
         
         $('#saved_update').html(`
-                                  <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                  <div class="alert alert-success fade show" role="alert">
                                     Link ${web_link} saved.
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                   </div>
 
       `);
+
+      setTimeout(function() {
+        $('.alert').fadeOut('slow');}, 1500
+      );
 
         clear_form();
     }
